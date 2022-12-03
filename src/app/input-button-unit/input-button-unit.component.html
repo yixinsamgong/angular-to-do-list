@@ -1,0 +1,10 @@
+<!-- <p>
+    input-button-unit works!
+    The title is: {{ title }}
+</p> -->
+
+<input class="todo-input" #inputElementRef [value]="title" (keyup.enter)="changeTitle($any($event.target).value)">
+
+<button class="btn" (click)="changeTitle(inputElementRef.value)">
+    Save
+</button>
