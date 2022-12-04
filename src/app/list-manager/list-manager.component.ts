@@ -11,6 +11,7 @@ export class ListManagerComponent implements OnInit {
 
   todoList: TodoItem[]
 
+  public searchText: any = '';
 
   constructor(private todoListService: TodoListService) {
     this.todoListService.getTodoList();

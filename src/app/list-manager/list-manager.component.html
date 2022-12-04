@@ -1,7 +1,10 @@
 <div class="todo-app">
     <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
+    <div class="div">
+        <input class="todo-input" type="text" placeholder="Search" autocomplete="off" [(ngModel)]="searchText">
+    </div>
         <ul>    
-            <li *ngFor="let todoItem of todoList">
+            <li *ngFor="let todoItem of todoList | searchFilter: searchText">
                 <app-todo-item [item]="todoItem" (remove)="removeItem($event)" ></app-todo-item>
             </li>
         </ul>

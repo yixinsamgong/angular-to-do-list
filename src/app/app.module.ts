@@ -8,6 +8,7 @@ import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.
 import { TodoItemComponent } from './todo-item/todo-item.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
 import { TodoListService } from './services/todo-list.service';
+import { SearchFilterPipe } from './search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TodoListService } from './services/todo-list.service';
     InputButtonUnitComponent,
     TodoItemComponent,
     ListManagerComponent,
+    SearchFilterPipe,
   ],
   imports: [
     BrowserModule,
