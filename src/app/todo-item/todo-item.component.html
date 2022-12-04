@@ -1,1 +1,7 @@
-{{ item.title }}
+<div class="todo-item">
+    {{ item.title }}
+    <button class="btn btn-emoji" 
+    (click)="removeItem()"
+    >🗑️
+    </button>
+</div>

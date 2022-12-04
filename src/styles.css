@@ -30,6 +30,7 @@ ol, ul {
     font-weight: bold;
     text-align: center;
     letter-spacing: -0.8px;
+    text-shadow: 2px 3px 0px lightseagreen;
 }
 
 .btn {
@@ -47,11 +48,17 @@ ol, ul {
 
 
 .btn:hover {
-    background: lightslategrey;
+    background: red;
 }
 
 .btn-emoji {
-    background: none;
+    background: rgb(226, 229, 232);
+    font-size: medium;
 }
+
+.btn-emoji:hover{
+    background: lightslategrey;
+}
+
 
 
